@@ -25,7 +25,6 @@ Should you need to suppress the,
    list of algorithms
 uncomment the following lines as needed in buetcseugthesis.tex:
 
-%\suppresslistoffigures 
+%\suppresslistoffigures
 %\suppresslistoftables
 %\suppresslistofalgorithms
-

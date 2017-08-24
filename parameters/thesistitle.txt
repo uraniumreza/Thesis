@@ -1,3 +1,1 @@
-Title of Your Thesis We Tested a Very Very Long Title to See What Happens
-in This Case Then We Made it Longer and We Can Make It Even Longer Than
-Longer
+Selection of k in kMeans algorithm
