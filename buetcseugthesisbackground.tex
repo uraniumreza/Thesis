@@ -1,0 +1,102 @@
+\chapter{Background}\label{background}
+
+\section{Introduction}
+\subsection{Machine Learning}
+Machine learning is the subfield of computer science that gives computers the ability to learn
+without being explicitly programmed. Evolved from the study of pattern recognition and computational
+learning theory in artificial intelligence, machine learning explores the study and
+construction of algorithms that can learn from and make predictions on data such algorithms
+overcome following strictly static program instructions by making data driven predictions or
+decisions, through building a model from sample inputs. Machine learning is employed in a
+range of computing tasks where designing and programming explicit algorithms is infeasible;
+example applications include spam filtering, detection of network intruders or malicious insiders
+working towards a data breach, optical character recognition (OCR), search engines and
+computer vision.\\
+
+Tom M. Mitchell~\cite{Michalski2013ml} provided a widely quoted, more formal definition:
+
+``A computer program is said to learn from experience E with respect to some class
+of tasks T and performance measure P if its performance at tasks in T, as measured
+by P, improves with experience E."
+
+Machine learning tasks are typically classified into three broad categories, depending on the
+nature of the learning ``signal" or ``feedback" available to a learning system. These are:\\
+
+\textbf{Supervised Learning}\\
+Supervised learning is where you have input variables ($x$) and an output variable ($Y$) and
+you use an algorithm to learn the mapping function from the input to the output. Exact functon
+may be as $Y$ = $f(X)$. The goal is to approximate the mapping function so well that when you
+have new input data ($x$) that you can predict the output variables ($Y$) for that data.
+
+It is called supervised learning because the process of an algorithm learning from the training
+dataset can be thought of as a teacher supervising the learning process. We know the correct
+answers, the algorithm iteratively makes predictions on the training data and is corrected by the
+teacher. Learning stops when the algorithm achieves an acceptable level of performance. Supervised
+learning problems can be further grouped into regression and classification problems.
+
+\begin{itemize}
+\item \textbf{Classification} : A classification problem is when the output variable is a category, such as
+``red" or ``blue" or ``disease" and ``no disease".
+\item \textbf{Regression} : A regression problem is when the output variable is a real value, such as
+``dollars" or ``weight".\\
+\end{itemize}
+
+\textbf{Unsupervised Learning}\\
+No labels are given to the learning algorithm, leaving it on its own to find structure in its
+input. Unsupervised learning can be a goal in itself (discovering hidden patterns in data) or a
+means towards an end (feature learning).Unsupervised learning is where you only have input
+data $(X)$ and no corresponding output variables.
+
+The goal for unsupervised learning is to model the underlying structure or distribution in the
+data in order to learn more about the data.These are called unsupervised learning because unlike
+supervised learning above there is no correct answers and there is no teacher. Algorithms are left
+to their own devises to discover and present the interesting structure in the data.Unsupervised
+learning problems can be further grouped into clustering and association problems.
+
+\begin{itemize}
+\item \textbf{Clustering} : A clustering problem is where you want to discover the inherent groupings
+in the data, such as grouping customers by purchasing behavior.
+\item \textbf{Association} : An association rule learning problem is where you want to discover rules
+that describe large portions of your data, such as people that buy X also tend to buy Y.\\
+\end{itemize}
+
+\textbf{Semi-Supervised Machine Learning}\\
+Problems where there is a large amount of input data (X) and only some of the data is labeled
+(Y) are called semi-supervised learning problems.These problems sit in between both supervised
+and unsupervised learning. A good example is a photo archive where only some of the
+images are labeled, (e.g. dog, cat, person) and the majority are unlabeled.
+
+Many real world machine learning problems fall into this area. This is because it can be
+expensive or time-consuming to label data as it may require access to domain experts. Whereas
+unlabeled data is cheap and easy to collect and store.\\
+
+\textbf{Reinforcement Learning}\\
+A computer program interacts with a dynamic environment in which it must perform a certain
+goal (such as driving a vehicle or playing a game against an opponent). The program is provided
+feedback in terms of rewards and punishments as it navigates its problem space.
+
+\section{A Deep Dive into Cluster Analysis}
+Cluster analysis groups data objects based only on information found in the
+data that describes the objects and their relationships.  The goal is that the
+objects within a group be similar (or related) to one another and different from
+(or unrelated to) the objects in other groups.  The greater the similarity (or
+homogeneity) within a group and the greater the difference between groups,
+the better or more distinct the clustering.
+
+Cluster analysis is related to other techniques that are used to divide data
+objects into groups.  For instance, clustering can be regarded as a form of
+classification in that it creates a labeling of objects with class (cluster) labels.
+However, it derives these labels only from the data. In contrast, classification
+in the sense of our previous section is \textbf{supervised classification}; i.e.,
+new, unlabeled objects are assigned a class label using a model developed from objects with
+known class labels. For this reason, cluster analysis is sometimes referred to as
+\textbf{unsupervised classification}. When the term classification is used
+without any qualification within data mining, it typically refers to supervised
+classification.
+
+\section{A}
+\section{B}
+\section{C}
+\section{D}
+
+\endinput

@@ -6,26 +6,46 @@
 \BOOKMARK [0][-]{section*.4}{List of Algorithms}{}% 6
 \BOOKMARK [0][-]{chapter*.5}{ABSTRACT}{}% 7
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 8
-\BOOKMARK [1][-]{section.1.1}{Cross Referencing}{chapter.1}% 9
-\BOOKMARK [1][-]{section.1.2}{How to Write a Section}{chapter.1}% 10
-\BOOKMARK [1][-]{section.1.3}{How to Add Table and Figures}{chapter.1}% 11
-\BOOKMARK [0][-]{chapter.2}{Citation Examples}{}% 12
-\BOOKMARK [1][-]{section.2.1}{See the Citations}{chapter.2}% 13
-\BOOKMARK [0][-]{chapter.3}{Another Chapter}{}% 14
-\BOOKMARK [1][-]{section.3.1}{A Section}{chapter.3}% 15
-\BOOKMARK [2][-]{subsection.3.1.1}{This is a Subsection}{section.3.1}% 16
-\BOOKMARK [1][-]{section.3.2}{And Another Section}{chapter.3}% 17
-\BOOKMARK [0][-]{chapter.4}{Index Creation}{}% 18
-\BOOKMARK [1][-]{section.4.1}{BUET}{chapter.4}% 19
-\BOOKMARK [1][-]{section.4.2}{Campus}{chapter.4}% 20
-\BOOKMARK [1][-]{section.4.3}{History}{chapter.4}% 21
-\BOOKMARK [1][-]{section.4.4}{Students}{chapter.4}% 22
-\BOOKMARK [1][-]{section.4.5}{Departments}{chapter.4}% 23
-\BOOKMARK [0][-]{chapter.5}{k-safe Labeling of Petersen Graph}{}% 24
-\BOOKMARK [0][-]{chapter.5}{References}{}% 25
-\BOOKMARK [0][-]{section*.10}{Index}{}% 26
-\BOOKMARK [0][-]{appendix.A}{Algorithms}{}% 27
-\BOOKMARK [1][-]{section.A.1}{Sample Algorithm}{appendix.A}% 28
-\BOOKMARK [0][-]{appendix.B}{Codes}{}% 29
-\BOOKMARK [1][-]{section.B.1}{Sample Code}{appendix.B}% 30
-\BOOKMARK [1][-]{section.B.2}{Another Sample Code}{appendix.B}% 31
+\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 9
+\BOOKMARK [2][-]{subsection.1.1.1}{Clustering}{section.1.1}% 10
+\BOOKMARK [2][-]{subsection.1.1.2}{Goals}{section.1.1}% 11
+\BOOKMARK [2][-]{subsection.1.1.3}{Applications}{section.1.1}% 12
+\BOOKMARK [2][-]{subsection.1.1.4}{Requirements}{section.1.1}% 13
+\BOOKMARK [2][-]{subsection.1.1.5}{Problems}{section.1.1}% 14
+\BOOKMARK [2][-]{subsection.1.1.6}{Classification}{section.1.1}% 15
+\BOOKMARK [1][-]{section.1.2}{Literature Survey}{chapter.1}% 16
+\BOOKMARK [2][-]{subsection.1.2.1}{Distance Measure}{section.1.2}% 17
+\BOOKMARK [1][-]{section.1.3}{Research Gap}{chapter.1}% 18
+\BOOKMARK [1][-]{section.1.4}{Objective}{chapter.1}% 19
+\BOOKMARK [1][-]{section.1.5}{Thesis Organization}{chapter.1}% 20
+\BOOKMARK [1][-]{section.1.6}{Cross Referencing}{chapter.1}% 21
+\BOOKMARK [1][-]{section.1.7}{How to Write a Section}{chapter.1}% 22
+\BOOKMARK [1][-]{section.1.8}{How to Add Table and Figures}{chapter.1}% 23
+\BOOKMARK [0][-]{chapter.2}{Background}{}% 24
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 25
+\BOOKMARK [2][-]{subsection.2.1.1}{Machine Learning}{section.2.1}% 26
+\BOOKMARK [1][-]{section.2.2}{A Deep Dive into Cluster Analysis}{chapter.2}% 27
+\BOOKMARK [1][-]{section.2.3}{A}{chapter.2}% 28
+\BOOKMARK [1][-]{section.2.4}{B}{chapter.2}% 29
+\BOOKMARK [1][-]{section.2.5}{C}{chapter.2}% 30
+\BOOKMARK [1][-]{section.2.6}{D}{chapter.2}% 31
+\BOOKMARK [0][-]{chapter.3}{Citation Examples}{}% 32
+\BOOKMARK [1][-]{section.3.1}{See the Citations}{chapter.3}% 33
+\BOOKMARK [0][-]{chapter.4}{Another Chapter}{}% 34
+\BOOKMARK [1][-]{section.4.1}{A Section}{chapter.4}% 35
+\BOOKMARK [2][-]{subsection.4.1.1}{This is a Subsection}{section.4.1}% 36
+\BOOKMARK [1][-]{section.4.2}{And Another Section}{chapter.4}% 37
+\BOOKMARK [0][-]{chapter.5}{Index Creation}{}% 38
+\BOOKMARK [1][-]{section.5.1}{BUET}{chapter.5}% 39
+\BOOKMARK [1][-]{section.5.2}{Campus}{chapter.5}% 40
+\BOOKMARK [1][-]{section.5.3}{History}{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.4}{Students}{chapter.5}% 42
+\BOOKMARK [1][-]{section.5.5}{Departments}{chapter.5}% 43
+\BOOKMARK [0][-]{chapter.6}{k-safe Labeling of Petersen Graph}{}% 44
+\BOOKMARK [0][-]{chapter.6}{References}{}% 45
+\BOOKMARK [0][-]{section*.10}{Index}{}% 46
+\BOOKMARK [0][-]{appendix.A}{Algorithms}{}% 47
+\BOOKMARK [1][-]{section.A.1}{Sample Algorithm}{appendix.A}% 48
+\BOOKMARK [0][-]{appendix.B}{Codes}{}% 49
+\BOOKMARK [1][-]{section.B.1}{Sample Code}{appendix.B}% 50
+\BOOKMARK [1][-]{section.B.2}{Another Sample Code}{appendix.B}% 51

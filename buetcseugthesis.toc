@@ -6,27 +6,47 @@
 \contentsline {chapter}{List of Algorithms}{viii}{section*.4}
 \contentsline {chapter}{\textbf {\relax \fontsize {12}{14.5}\selectfont \abovedisplayskip 12\p@ plus3\p@ minus7\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ \leftmargin \leftmargini \parsep 5\p@ plus2.5\p@ minus\p@ \topsep 10\p@ plus4\p@ minus6\p@ \itemsep 5\p@ plus2.5\p@ minus\p@ {\emph {ABSTRACT}}}}{ix}{chapter*.5}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Cross Referencing}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}How to Write a Section}{1}{section.1.2}
-\contentsline {section}{\numberline {1.3}How to Add Table and Figures}{1}{section.1.3}
-\contentsline {chapter}{\numberline {2}Citation Examples}{4}{chapter.2}
-\contentsline {section}{\numberline {2.1}See the Citations}{4}{section.2.1}
-\contentsline {chapter}{\numberline {3}Another Chapter}{5}{chapter.3}
-\contentsline {section}{\numberline {3.1}A Section}{5}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}This is a Subsection}{5}{subsection.3.1.1}
-\contentsline {subsubsection}{This is a Subsubsection}{5}{section*.8}
-\contentsline {section}{\numberline {3.2}And Another Section}{5}{section.3.2}
-\contentsline {chapter}{\numberline {4}Index Creation}{8}{chapter.4}
-\contentsline {section}{\numberline {4.1}BUET}{8}{section.4.1}
-\contentsline {section}{\numberline {4.2}Campus}{8}{section.4.2}
-\contentsline {section}{\numberline {4.3}History}{8}{section.4.3}
-\contentsline {section}{\numberline {4.4}Students}{9}{section.4.4}
-\contentsline {section}{\numberline {4.5}Departments}{9}{section.4.5}
-\contentsline {chapter}{\numberline {5}$k$-safe Labeling of Petersen Graph}{10}{chapter.5}
-\contentsline {chapter}{References}{11}{chapter.5}
-\contentsline {chapter}{Index}{14}{section*.10}
-\contentsline {chapter}{\numberline {A}Algorithms}{15}{appendix.A}
-\contentsline {section}{\numberline {A.1}Sample Algorithm}{15}{section.A.1}
-\contentsline {chapter}{\numberline {B}Codes}{16}{appendix.B}
-\contentsline {section}{\numberline {B.1}Sample Code}{16}{section.B.1}
-\contentsline {section}{\numberline {B.2}Another Sample Code}{17}{section.B.2}
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Clustering}{1}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Goals}{2}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Applications}{2}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.1.4}Requirements}{2}{subsection.1.1.4}
+\contentsline {subsection}{\numberline {1.1.5}Problems}{3}{subsection.1.1.5}
+\contentsline {subsection}{\numberline {1.1.6}Classification}{3}{subsection.1.1.6}
+\contentsline {section}{\numberline {1.2}Literature Survey}{6}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Distance Measure}{6}{subsection.1.2.1}
+\contentsline {section}{\numberline {1.3}Research Gap}{7}{section.1.3}
+\contentsline {section}{\numberline {1.4}Objective}{7}{section.1.4}
+\contentsline {section}{\numberline {1.5}Thesis Organization}{7}{section.1.5}
+\contentsline {section}{\numberline {1.6}Cross Referencing}{7}{section.1.6}
+\contentsline {section}{\numberline {1.7}How to Write a Section}{7}{section.1.7}
+\contentsline {section}{\numberline {1.8}How to Add Table and Figures}{7}{section.1.8}
+\contentsline {chapter}{\numberline {2}Background}{10}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{10}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Machine Learning}{10}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}A Deep Dive into Cluster Analysis}{12}{section.2.2}
+\contentsline {section}{\numberline {2.3}A}{12}{section.2.3}
+\contentsline {section}{\numberline {2.4}B}{12}{section.2.4}
+\contentsline {section}{\numberline {2.5}C}{12}{section.2.5}
+\contentsline {section}{\numberline {2.6}D}{12}{section.2.6}
+\contentsline {chapter}{\numberline {3}Citation Examples}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}See the Citations}{13}{section.3.1}
+\contentsline {chapter}{\numberline {4}Another Chapter}{14}{chapter.4}
+\contentsline {section}{\numberline {4.1}A Section}{14}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}This is a Subsection}{14}{subsection.4.1.1}
+\contentsline {subsubsection}{This is a Subsubsection}{14}{section*.8}
+\contentsline {section}{\numberline {4.2}And Another Section}{14}{section.4.2}
+\contentsline {chapter}{\numberline {5}Index Creation}{17}{chapter.5}
+\contentsline {section}{\numberline {5.1}BUET}{17}{section.5.1}
+\contentsline {section}{\numberline {5.2}Campus}{17}{section.5.2}
+\contentsline {section}{\numberline {5.3}History}{17}{section.5.3}
+\contentsline {section}{\numberline {5.4}Students}{18}{section.5.4}
+\contentsline {section}{\numberline {5.5}Departments}{18}{section.5.5}
+\contentsline {chapter}{\numberline {6}$k$-safe Labeling of Petersen Graph}{19}{chapter.6}
+\contentsline {chapter}{References}{20}{chapter.6}
+\contentsline {chapter}{Index}{23}{section*.10}
+\contentsline {chapter}{\numberline {A}Algorithms}{24}{appendix.A}
+\contentsline {section}{\numberline {A.1}Sample Algorithm}{24}{section.A.1}
+\contentsline {chapter}{\numberline {B}Codes}{25}{appendix.B}
+\contentsline {section}{\numberline {B.1}Sample Code}{25}{section.B.1}
+\contentsline {section}{\numberline {B.2}Another Sample Code}{26}{section.B.2}

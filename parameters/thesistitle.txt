@@ -1,1 +1,1 @@
-Selection of k in kMeans algorithm
+Selection of K in K-Means Algorithm
