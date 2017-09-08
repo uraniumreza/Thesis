@@ -1,20 +1,66 @@
-\indexentry{BUET}{17}
-\indexentry{BUET!undergraduate}{17}
-\indexentry{BUET!postgraduate}{17}
-\indexentry{Dhaka}{17}
-\indexentry{BUET!auditorium}{17}
-\indexentry{BUET!History}{17}
-\indexentry{Nalgola}{17}
-\indexentry{Ahsanullah School of Engineering}{18}
-\indexentry{1971|see {War of Liberation}}{18}
-\indexentry{War of   Liberation}{18}
-\indexentry{India}{18}
-\indexentry{Nepal}{18}
-\indexentry{Iran}{18}
-\indexentry{Jordan}{18}
-\indexentry{Malaysia}{18}
-\indexentry{Sri   Lanka}{18}
-\indexentry{Pakistan}{18}
-\indexentry{Palestine}{18}
-\indexentry{Commonwealth}{18}
-\indexentry{UGC}{18}
+\indexentry{Clustering}{1}
+\indexentry{Cluster}{1}
+\indexentry{Natural Clusters}{2}
+\indexentry{Marketing}{2}
+\indexentry{Biology}{2}
+\indexentry{Libraries}{2}
+\indexentry{Insurance}{2}
+\indexentry{Uraban Planning}{2}
+\indexentry{World Wide Web}{2}
+\indexentry{Hierarchical Clustering}{3}
+\indexentry{Dendrogram}{3}
+\indexentry{Connectivity Based Clustering}{4}
+\indexentry{Distance Functions}{4}
+\indexentry{Single Linkage Clustering}{4}
+\indexentry{Complete Linkage Clustering}{4}
+\indexentry{UPGMA}{4}
+\indexentry{Average Linkage Clustering}{4}
+\indexentry{Divisive Clustering}{4}
+\indexentry{Data Mining}{4}
+\indexentry{Centroid Based Clustering}{4}
+\indexentry{Optimization Problem}{4}
+\indexentry{K-means}{4}
+\indexentry{K-medoids}{4}
+\indexentry{fuzzy C-means}{4}
+\indexentry{Distribution Based Clustering}{5}
+\indexentry{Overfitting}{5}
+\indexentry{Gaussian Mixture Models}{5}
+\indexentry{Density Based Clustering}{5}
+\indexentry{Density Link Clustering}{6}
+\indexentry{DBSCAN}{6}
+\indexentry{OPTICS}{6}
+\indexentry{Local Maxima}{6}
+\indexentry{Density Attractors}{6}
+\indexentry{Mean Shift}{6}
+\indexentry{Bayesian Information Criterion}{7}
+\indexentry{Monte Carlo}{8}
+\indexentry{Null Hypothesis}{8}
+\indexentry{Machine Learning}{10}
+\indexentry{OCR}{10}
+\indexentry{Computer Vision}{10}
+\indexentry{Supervised Learning}{10}
+\indexentry{Classification Problem}{11}
+\indexentry{Regression Problem}{11}
+\indexentry{Unsupervised Learning}{11}
+\indexentry{Clustering Problem}{11}
+\indexentry{Association Problem}{11}
+\indexentry{Semi-supervised Learning}{11}
+\indexentry{Reinforcement Learning}{12}
+\indexentry{Cluster Analysis}{12}
+\indexentry{Supervised Classification}{12}
+\indexentry{Unsupervised Classification}{12}
+\indexentry{Centroid Based Clustering}{12}
+\indexentry{Euclidean Distance}{13}
+\indexentry{Manhattan Distance}{13}
+\indexentry{SSE}{15}
+\indexentry{Elbow Method}{18}
+\indexentry{Average Silhouette Method}{19}
+\indexentry{Silhouette}{20}
+\indexentry{Euclidean Distance}{20}
+\indexentry{Manhattan Distance}{20}
+\indexentry{Gap Statistic Method}{21}
+\indexentry{WSS}{21}
+\indexentry{Elbow Index}{25}
+\indexentry{Silhouette Index}{25}
+\indexentry{Gap Index}{26}
+\indexentry{WSS}{26}

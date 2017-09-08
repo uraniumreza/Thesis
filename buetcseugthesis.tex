@@ -1,5 +1,5 @@
 \documentclass[12pt,notitlepage,oneside]{report}
-
+\usepackage{tabularx}
 \usepackage{buetcseugthesis}
 
 % Uncomment the following line if you need to write in Bangla
@@ -9,6 +9,8 @@
 
 % Uncomment any of the following lines should you need to
 % suppress the LOF, or LOT or LOA
+
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
 % \suppresslistoffigures
 % \suppresslistoftables
@@ -29,20 +31,17 @@
 % Chapter-2 Background
 \input{buetcseugthesisbackground.tex}
 
-% Citation examples
-\input{buetcseugthesisciteexamples.tex}
+% Chapter-3 My Work
+\input{buetcseugthesismywork.tex}
 
-% Another chapter
-\input{buetcseugthesisanotherchapter.tex}
+% Chapter-4 Experimental Study
+\input{buetcseugthesisexperimentalstudy.tex}
 
-% Chapter showing example of index creation
-\input{buetcseugthesisindexcreation.tex}
+% Chapter-4 Conclusion
+\input{buetcseugthesisconclusion.tex}
 
 % Bangla example, uncomment if you need this
 % \input {banglaexample.tex}
-
-% Chapter with math in ttile
-\input{buetcseugthesischapterwithmathintitle.tex}
 
 % Bibliographies and appendices
 \input{buetcseugthesisbibliography.tex}
@@ -52,7 +51,7 @@
 
 \appendix
 % Algorithms
-\input{buetcseugthesisalgorithms.tex}
+% \input{buetcseugthesisalgorithms.tex}
 
 % Codes
 \input{buetcseugthesiscodes.tex}

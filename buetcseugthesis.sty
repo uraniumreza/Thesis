@@ -27,7 +27,7 @@
 \RequirePackage{cleveref}
 
 % Caption setup
-\RequirePackage{caption} 
+\RequirePackage{caption}
 \captionsetup[table]{skip=2.50mm}
 
 % 1.5 spacing
@@ -36,7 +36,7 @@
 \RequirePackage{xspace}
 
 % sets leading space for paragraphs
-\parindent 0.0mm		  
+\parindent 0.0mm
 
 
 % Read and store student names in DB
@@ -48,7 +48,7 @@
 \def\thesistitle{\input{parameters/thesistitle.txt}\unskip}
 \def\thesisdate{\input{parameters/thesisdate.txt}\unskip}
 
-% Thesis title page 
+% Thesis title page
 \def\thesistitlepage{
   \thispagestyle{empty}
   \begin{center}
@@ -82,23 +82,23 @@
   \end{center}
   \addcontentsline{toc}{chapter}{\textbf{\normalsize{\emph{CERTIFICATION}}}}
   \bigskip\bigskip
-  
+
 
   This thesis titled, \textbf{\lq\lq\thesistitle\rq\rq}, submitted by
   the group as mentioned below has been accepted as satisfactory in
   partial fulfillment of the requirements for the degree B.Sc.\ in
   Computer Science and Engineering in \thesisdate.
 
-  \vspace{\stretch{1}}  
+  \vspace{\stretch{1}}
 
   \subsubsection*{Group Members:}
-  
+
   \begin{enumerate}
     \DTLforeach{ThesisStudents}{\StudentName=Column1}{\item[]\textbf{\StudentName}}
   \end{enumerate}
-  
+
   \vspace{\stretch{1}}
-  
+
   \subsubsection*{Supervisor:}
   \vspace*{15.0mm}
 
@@ -119,7 +119,7 @@
   \end{center}
   \addcontentsline{toc}{chapter}{\textbf{\normalsize{\emph{CANDIDATES' DECLARATION}}}}
   \vspace*{\stretch{1}}
-    
+
   This is to certify that the work presented in this thesis, titled,
   ``\thesistitle'', is the outcome of the investigation and research
   carried out by us under the supervision of
@@ -139,7 +139,7 @@
       \StudentName\par
       \StudentID
     \end{minipage}\par}
-  
+
   \vspace*{\stretch{2}}
   \endgroup}
 
@@ -190,7 +190,7 @@
 
   \cleardoublepage
   \listsandtoc
-  
+
   \cleardoublepage
   \input{buetcseugthesisabstract.tex}
 }
@@ -224,9 +224,9 @@
 \AtEndDocument{%
   \clearpage
   \pagestyle{plain}
-  
+
   \begingroup
-  
+
   \flushright
 
   \vspace*{0.0mm}

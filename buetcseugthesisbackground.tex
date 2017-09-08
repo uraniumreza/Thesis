@@ -2,7 +2,7 @@
 
 \section{Introduction}
 \subsection{Machine Learning}
-Machine learning is the subfield of computer science that gives computers the ability to learn
+Machine learning\index{Machine Learning} is the subfield of computer science that gives computers the ability to learn
 without being explicitly programmed. Evolved from the study of pattern recognition and computational
 learning theory in artificial intelligence, machine learning explores the study and
 construction of algorithms that can learn from and make predictions on data such algorithms
@@ -10,8 +10,8 @@ overcome following strictly static program instructions by making data driven pr
 decisions, through building a model from sample inputs. Machine learning is employed in a
 range of computing tasks where designing and programming explicit algorithms is infeasible;
 example applications include spam filtering, detection of network intruders or malicious insiders
-working towards a data breach, optical character recognition (OCR), search engines and
-computer vision.\\
+working towards a data breach, optical character recognition (OCR)\index{OCR}, search engines and
+computer vision\index{Computer Vision}.\\
 
 Tom M. Mitchell~\cite{Michalski2013ml} provided a widely quoted, more formal definition:
 
@@ -23,7 +23,7 @@ Machine learning tasks are typically classified into three broad categories, dep
 nature of the learning ``signal" or ``feedback" available to a learning system. These are:\\
 
 \textbf{Supervised Learning}\\
-Supervised learning is where you have input variables ($x$) and an output variable ($Y$) and
+Supervised learning\index{Supervised Learning} is where you have input variables ($x$) and an output variable ($Y$) and
 you use an algorithm to learn the mapping function from the input to the output. Exact functon
 may be as $Y$ = $f(X)$. The goal is to approximate the mapping function so well that when you
 have new input data ($x$) that you can predict the output variables ($Y$) for that data.
@@ -35,14 +35,14 @@ teacher. Learning stops when the algorithm achieves an acceptable level of perfo
 learning problems can be further grouped into regression and classification problems.
 
 \begin{itemize}
-\item \textbf{Classification} : A classification problem is when the output variable is a category, such as
+\item \textbf{Classification} : A classification\index{Classification Problem} problem is when the output variable is a category, such as
 ``red" or ``blue" or ``disease" and ``no disease".
-\item \textbf{Regression} : A regression problem is when the output variable is a real value, such as
+\item \textbf{Regression} : A regression\index{Regression Problem} problem is when the output variable is a real value, such as
 ``dollars" or ``weight".\\
 \end{itemize}
 
 \textbf{Unsupervised Learning}\\
-No labels are given to the learning algorithm, leaving it on its own to find structure in its
+No labels are given to the learning algorithm\index{Unsupervised Learning}, leaving it on its own to find structure in its
 input. Unsupervised learning can be a goal in itself (discovering hidden patterns in data) or a
 means towards an end (feature learning).Unsupervised learning is where you only have input
 data $(X)$ and no corresponding output variables.
@@ -54,15 +54,15 @@ to their own devises to discover and present the interesting structure in the da
 learning problems can be further grouped into clustering and association problems.
 
 \begin{itemize}
-\item \textbf{Clustering} : A clustering problem is where you want to discover the inherent groupings
+\item \textbf{Clustering} : A clustering problem\index{Clustering Problem} is where you want to discover the inherent groupings
 in the data, such as grouping customers by purchasing behavior.
-\item \textbf{Association} : An association rule learning problem is where you want to discover rules
+\item \textbf{Association} : An association\index{Association Problem} rule learning problem is where you want to discover rules
 that describe large portions of your data, such as people that buy X also tend to buy Y.\\
 \end{itemize}
 
 \textbf{Semi-Supervised Machine Learning}\\
 Problems where there is a large amount of input data (X) and only some of the data is labeled
-(Y) are called semi-supervised learning problems.These problems sit in between both supervised
+(Y) are called semi-supervised learning\index{Semi-supervised Learning} problems.These problems sit in between both supervised
 and unsupervised learning. A good example is a photo archive where only some of the
 images are labeled, (e.g. dog, cat, person) and the majority are unlabeled.
 
@@ -73,10 +73,10 @@ unlabeled data is cheap and easy to collect and store.\\
 \textbf{Reinforcement Learning}\\
 A computer program interacts with a dynamic environment in which it must perform a certain
 goal (such as driving a vehicle or playing a game against an opponent). The program is provided
-feedback in terms of rewards and punishments as it navigates its problem space.
+feedback in terms of rewards and punishments as it navigates its problem space.\index{Reinforcement Learning}
 
 \section{A Deep Dive into Cluster Analysis}
-Cluster analysis groups data objects based only on information found in the
+Cluster analysis\index{Cluster Analysis} groups data objects based only on information found in the
 data that describes the objects and their relationships.  The goal is that the
 objects within a group be similar (or related) to one another and different from
 (or unrelated to) the objects in other groups.  The greater the similarity (or
@@ -87,16 +87,162 @@ Cluster analysis is related to other techniques that are used to divide data
 objects into groups.  For instance, clustering can be regarded as a form of
 classification in that it creates a labeling of objects with class (cluster) labels.
 However, it derives these labels only from the data. In contrast, classification
-in the sense of our previous section is \textbf{supervised classification}; i.e.,
+in the sense of our previous section is \textbf{supervised classification}\index{Supervised Classification}; i.e.,
 new, unlabeled objects are assigned a class label using a model developed from objects with
 known class labels. For this reason, cluster analysis is sometimes referred to as
-\textbf{unsupervised classification}. When the term classification is used
+\textbf{unsupervised classification}\index{Unsupervised Classification}. When the term classification is used
 without any qualification within data mining, it typically refers to supervised
 classification.
 
-\section{A}
-\section{B}
-\section{C}
-\section{D}
+\subsection{Centroid Based Cluster}
+A cluster is a set of objects in which each object is closer
+(more similar) to the center that defines the cluster than to the centers
+of any other cluster\index{Centroid Based Clustering}.  For data with continuous attributes, the prototype of a
+cluster is often a centroid, i.e., the average (mean) of all the points in the cluster.
+When a centroid is not meaningful, such as when the data has categorical
+attributes, the prototype is often a medoid, i.e., the most representative point
+of a cluster.  For many types of data, the centroid can be regarded as the
+most central point. One of the most popular centroid-based algorithm is $K$-means. Let's
+have a look on to the details about $K$-means algorithm.
+
+\subsection{$K$-means}
+Centroid-based clustering techniques create a one-level partitioning of the
+data objects.  There are a number of such techniques, but two of the most
+prominent are $K$-means and $K$-medoid. $K$-means defines a prototype in terms
+of a centroid, which is usually the mean of a group of points, and is typically
+applied to objects in a continuous $n$ dimensional space.  $K$-medoid defines a
+prototype in terms of a medoid, which is the most representative point for a
+group of points, and can be applied to a wide range of data since it requires
+only a proximity measure for a pair of objects. While a centroid almost never
+corresponds to an actual data point, a medoid, by its definition, must be an
+actual data point.  In this subsection, we will focus solely on $K$-means, which is
+one of the oldest and most widely used clustering algorithms and our objective is based on this algorithm.
+
+\subsection{The Basic $K$-means Algorithm}
+The K-means clustering technique is simple, and we begin with a description
+of the basic algorithm. We first choose $K$ initial centroids, where $K$ is a user-specified
+parameter, namely, the number of clusters desired.  Each point is
+then assigned to the closest centroid, and each collection of points assigned to
+a centroid is a cluster. The centroid of each cluster is then updated based on
+the points assigned to the cluster. We repeat the assignment and update steps
+until no point changes clusters, or equivalently, until the centroids remain the
+same.
+
+K-means is formally described by Algorithm~\ref{alg0}
+
+\begin{algorithm}
+  \caption{Basic K-means algorithm.}
+  \label{alg0}
+  \begin{algorithmic}
+    \input{algorithms/kmeans.alg}
+  \end{algorithmic}
+\end{algorithm}
+
+\subsection{Assigning Points to the Closest Centroid}
+To assign a point to the closest centroid, we need a proximity measure that
+quantifies the notion of ``closest" for the specific data under consideration.
+Euclidean (L2) distance\index{Euclidean Distance} is often used for data points in Euclidean space, while
+cosine similarity is more appropriate for documents.  However, there may be
+several types of proximity measures that are appropriate for a given type of
+data. For example, Manhattan (L1) distance\index{Manhattan Distance} can be used for Euclidean data,
+while the Jaccard measure is often employed for documents.
+
+Usually, the similarity measures used for K-means are relatively simple
+since the algorithm repeatedly calculates the similarity of each point to each
+centroid. In some cases, however, such as when the data is in low-dimensional
+Euclidean space, it is possible to avoid computing many of the similarities,
+thus significantly speeding up the K-means algorithm.   Bisecting K-means
+is another approach that speeds up K-means by reducing the number of similarities computed.
+
+\subsection{Centroids and Objective Functions}
+Step 4 of the K-means algorithm was stated rather generally as ``recompute
+the centroid of each cluster," since the centroid can vary, depending on the
+proximity measure for the data and the goal of the clustering.  The goal of
+the clustering is typically expressed by an objective function that depends on
+the proximities of the points to one another or to the cluster centroids; e.g.,
+minimize the squared distance of each point to its closest centroid. However,
+the key point is this: once we have
+specified a proximity measure and an objective function, the centroid that we
+should choose can often be determined mathematically.
+
+\subsection{Data in Euclidean Space}
+Consider data whose proximity measure is Euclidean distance.
+For our objective function, which measures the quality of a
+clustering, we use the sum of the squared error (SSE), which is also known
+as scatter.  In other words, we calculate the error of each data point, i.e., its
+Euclidean distance to the closest centroid, and then compute the total sum
+of the squared errors.  Given two different sets of clusters that are produced
+by two different runs of K-means, we prefer the one with the smallest squared
+error since this means that the prototypes (centroids) of this clustering are
+a better representation of the points in their cluster.\\
+
+\hangindent=0.5cm
+$SSE$ = $\sum_{i=1}^{K}$ $\sum_{x \epsilon C_i}$ $dist(C_i, x)^2$
+\\\\Where,
+$x$ = An object.\\
+$C_i$ = The i\'th cluster.\\
+$c_i$ = The centroid of cluster $C_i$.\\
+$c$ = The centroid of all points.\\
+$m_i$ = The number of objects in the i\'th cluster.\\
+$m$ = The number of objects in the dataset.\\
+$K$ = The number of clusters.\\
+$dist$ = Standard Euclidean distance between two objects in Euclidean Space.\\
+
+\subsection{Choosing Initial Centroids}
+When random initialization of centroids is used, different runs of $K$-means
+typically produce different total $SSE$s. Choosing the proper initial centroids
+is the key step of the basic $K$-means procedure.  A common approach is to choose
+the initial centroids randomly, but the resulting clusters are often poor.
+
+An optimal clustering will be obtained as long as two initial
+centroids fall anywhere in a pair of clusters, since the centroids will redistribute
+themselves,  one to each cluster. Unfortunately,  as the number of clusters
+becomes larger, it is increasingly likely that at least one pair of clusters will
+have only one initial centroid. In this case,
+because the pairs of clusters are farther apart than clusters within a pair, the
+K-means algorithm will not redistribute the centroids between pairs of clusters,
+and thus, only a local minimum will be achieved.
+
+Because of the problems with using randomly selected initial centroids,
+which even repeated runs may not overcome, other techniques are often employed
+for initialization.  One effective approach is to take a sample of points
+and cluster them using a hierarchical clustering technique. $K$ clusters are extracted
+from the hierarchical clustering, and the centroids of those clusters are
+used as the initial centroids. This approach often works well, but is practical
+only if the sample is relatively small, e.g., a few hundred to a few thousand
+(because hierarchical clustering is expensive), and $K$ is relatively small compared
+to the sample size.
+
+\subsection{Updating Centroids Incrementally}
+Instead of updating cluster centroids after all points have been assigned to a
+cluster, the centroids can be updated incrementally, after each assignment of
+a point to a cluster.  Notice that this requires either zero or two updates to
+cluster centroids at each step, since a point either moves to a new cluster (two
+updates) or stays in its current cluster (zero updates).  Using an incremental
+update strategy guarantees that empty clusters are not produced since all
+clusters start with a single point, and if a cluster ever has only one point, then
+that point will always be reassigned to the same cluster.
+
+In addition, if incremental updating is used, the relative weight of the point
+being added may be adjusted; e.g., the weight of points is often decreased as
+the clustering proceeds.  While this can result in better accuracy and faster
+convergence, it can be difficult to make a good choice for the relative weight,
+especially in a wide variety of situations.  These update issues are similar to
+those involved in updating weights for artificial neural networks.
+
+Yet another benefit of incremental updates has to do with using objectives
+other than ``minimize $SSE$."\index{SSE} Suppose that we are given an arbitrary objective
+function to measure the goodness of a set of clusters.  When we process an
+individual point, we can compute the value of the objective function for each
+possible cluster assignment, and then choose the one that optimizes the objective.
+
+On the negative side, updating centroids incrementally introduces an order dependency.
+In other words, the clusters produced may depend on the
+order in which the points are processed.  Although this can be addressed by
+randomizing the order in which the points are processed, the basic $K$-means
+approach of updating the centroids after all points have been assigned to clusters
+has no order dependency.  Also, incremental updates are slightly more
+expensive.   However,  K-means converges rather quickly,  and therefore,  the
+number of points switching clusters quickly becomes relatively small.
 
 \endinput

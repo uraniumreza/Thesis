@@ -1,60 +1,117 @@
 \begin{theindex}
 
-  \item 1971, \see {War of Liberation}{18}
+  \item Association Problem, 11
+  \item Average Linkage Clustering, 4
+  \item Average Silhouette Method, 19
 
   \indexspace
 
-  \item Ahsanullah School of Engineering, 18
+  \item Bayesian Information Criterion, 7
+  \item Biology, 2
 
   \indexspace
 
-  \item BUET, 17
-    \subitem auditorium, 17
-    \subitem History, 17
-    \subitem postgraduate, 17
-    \subitem undergraduate, 17
+  \item Centroid Based Clustering, 4, 12
+  \item Classification Problem, 11
+  \item Cluster, 1
+  \item Cluster Analysis, 12
+  \item Clustering, 1
+  \item Clustering Problem, 11
+  \item Complete Linkage Clustering, 4
+  \item Computer Vision, 10
+  \item Connectivity Based Clustering, 4
 
   \indexspace
 
-  \item Commonwealth, 18
+  \item Data Mining, 4
+  \item DBSCAN, 6
+  \item Dendrogram, 3
+  \item Density Attractors, 6
+  \item Density Based Clustering, 5
+  \item Density Link Clustering, 6
+  \item Distance Functions, 4
+  \item Distribution Based Clustering, 5
+  \item Divisive Clustering, 4
 
   \indexspace
 
-  \item Dhaka, 17
+  \item Elbow Index, 25
+  \item Elbow Method, 18
+  \item Euclidean Distance, 13, 20
 
   \indexspace
 
-  \item India, 18
-  \item Iran, 18
+  \item fuzzy C-means, 4
 
   \indexspace
 
-  \item Jordan, 18
+  \item Gap Index, 26
+  \item Gap Statistic Method, 21
+  \item Gaussian Mixture Models, 5
 
   \indexspace
 
-  \item Malaysia, 18
+  \item Hierarchical Clustering, 3
 
   \indexspace
 
-  \item Nalgola, 17
-  \item Nepal, 18
+  \item Insurance, 2
 
   \indexspace
 
-  \item Pakistan, 18
-  \item Palestine, 18
+  \item K-means, 4
+  \item K-medoids, 4
 
   \indexspace
 
-  \item Sri   Lanka, 18
+  \item Libraries, 2
+  \item Local Maxima, 6
 
   \indexspace
 
-  \item UGC, 18
+  \item Machine Learning, 10
+  \item Manhattan Distance, 13, 20
+  \item Marketing, 2
+  \item Mean Shift, 6
+  \item Monte Carlo, 8
 
   \indexspace
 
-  \item War of   Liberation, 18
+  \item Natural Clusters, 2
+  \item Null Hypothesis, 8
+
+  \indexspace
+
+  \item OCR, 10
+  \item OPTICS, 6
+  \item Optimization Problem, 4
+  \item Overfitting, 5
+
+  \indexspace
+
+  \item Regression Problem, 11
+  \item Reinforcement Learning, 12
+
+  \indexspace
+
+  \item Semi-supervised Learning, 11
+  \item Silhouette, 20
+  \item Silhouette Index, 25
+  \item Single Linkage Clustering, 4
+  \item SSE, 15
+  \item Supervised Classification, 12
+  \item Supervised Learning, 10
+
+  \indexspace
+
+  \item Unsupervised Classification, 12
+  \item Unsupervised Learning, 11
+  \item UPGMA, 4
+  \item Uraban Planning, 2
+
+  \indexspace
+
+  \item World Wide Web, 2
+  \item WSS, 21, 26
 
 \end{theindex}
