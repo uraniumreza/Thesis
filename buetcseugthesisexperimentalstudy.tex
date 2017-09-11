@@ -77,6 +77,12 @@ the quantities of 13 constituents found in each of the three types of wines. All
 of votes given to the republican candidate in presidential elections from 1856 to 1976. Rows represent the
 50 states, and columns the 31 elections.
 
+\item \textbf{Plant Species Traits Data} : This dataset constitutes a description of 136 plant species according to biological attributes (morphological or reproductive). A data frame with 136 observations on the following 31 variables.
+
+\item \textbf{Flower Characteristics} : This dataset consists of 8 characteristics for 18 popular flowers. A data frame with 18 observations on 8 variables.
+
+\item \textbf{Subset of C-horizon of Kola Data} : This is a small rounded subset of the C-horizon data \textit{chorizon} from package \textit{mvoutlier}. A data frame with 61 observations on 10 variables. The variables contain scaled concentrations of chemical elements.
+
 \end{enumerate}
 
 
@@ -97,10 +103,10 @@ intercluster isolation, as well as other factors, such as geometric or statistic
 the data, the number of data objects and dissimilarity or similarity measurements.
 
 \begin{itemize}
-\item \textbf{Elbow Index} : The basic\index{Elbow Index} idea behind partitioning methods, such as k-means clustering,
+\item \textbf{Elbow Index} : The basic\index{Elbow Index} idea behind partitioning methods, such as $K$-means clustering,
 is to define clusters such that the total intra-cluster variation (known as total within-cluster
-variation or total within-cluster sum of square) is minimized:\\\\
-$minimize(\sum_{k=1}^{K}WC_k)$;
+variation or total within-cluster sum of square) is minimized:
+$$minimize(\sum_{k=1}^{K}WC_k)$$
 
 where $C_k$ is the $k^{th}$ cluster and $W(C_k)$ is the within-cluster variation.
 That means the total within-cluster sum of square $(wss)$ measures the compactness of the clustering and we want
@@ -112,7 +118,7 @@ Silhouette = $\frac{\sum_{i=1}^{n}S(i)}{n}$; Silhouette $\epsilon{[-1, 1]}$
 
 where,
 \begin{itemize}
-\item $S(i) = \frac{b(i)−a(i)}{max\{a(i), b(i)\}}$
+\item $S(i) = \frac{b(i) - a(i)}{max\{a(i), b(i)\}}$
 \item $a(i) = \frac{\sum_{j\epsilon\{C_r, i\}}d_{ij}}{n_r - 1}$ is the average dissimilarity of the ith object
 to all other objects of cluster $C_r$
 \item $b(i) = \min(d_{iC_{s}})$; $s \neq r$
@@ -120,18 +126,18 @@ to all other objects of cluster $C_r$
 \end{itemize}
 
 The maximum value of the index is used to determine the optimal number of clusters in the
-data~\cite{rousseeuw90}. $S(i)$ is not defined for $k = 1$ (only one cluster).
+data~\cite{rousseeuw90}.
 
 \item \textbf{Gap Index} : The estimated Gap statistic\index{Gap Index} proposed by Tibshirani~\cite{tibshirani01} is
-computed using the following equation:\\
+computed using the following equation:
 
-$Gap(q) = \frac{1}{B}\sum_{b=1}^{B} \log{W_{qb}} - \log{W_{q}}$\\
+$$Gap(q) = \frac{1}{B}\sum_{b=1}^{B} \log{W_{qb}} - \log{W_{q}}$$
 
 where $B$ is the number of reference data sets generated using uniform prescription and $W_{qb}$
 is the within-dispersion matrix. The optimal number of clusters is chosen via finding the smallest
-$q$ such that:\\
+$q$ such that:
 
-$Gap(q) \geq Gap(q+1) - s_{q+1}, (q = 1, ..., n-2)$
+$$Gap(q) \geq Gap(q+1) - s_{q+1}, (q = 1, ..., n-2)$$
 
 where,
 
@@ -154,6 +160,8 @@ Number of clusters $K$ along the X-axis. The total within-cluster sum of square 
 of the clustering and we want it to be as small as possible. And from the algorithm we know that The location
 of a bend (knee) in the plot is generally considered as an indicator of the appropriate number of clusters.
 
+\vspace{5mm}
+
 In Figure \ref{fig:elbow1} we can see that three clusters have been suggested for \textit{iris} dataset which
 has originally three classes.
 
@@ -164,7 +172,7 @@ has originally three classes.
   \label{fig:elbow1}
 \end{figure}
 
-\vspace{15mm}
+\newpage
 
 In Figure \ref{fig:elbow2} we can see that three clusters have been suggested for \textit{Isotopic Composition Plutonium Batches}
 dataset.
@@ -176,7 +184,7 @@ dataset.
   \label{fig:elbow2}
 \end{figure}
 
-\newpage
+\vspace{15mm}
 
 In Figure \ref{fig:elbow3} we can see that four clusters have been suggested for \textit{Votes for Republican Candidate in Presidential Elections}
 dataset.
@@ -188,7 +196,7 @@ dataset.
   \label{fig:elbow3}
 \end{figure}
 
-\vspace{15mm}
+\newpage
 
 In Figure \ref{fig:elbow4} we can see that four clusters have been suggested for \textit{Ruspini} dataset.
 
@@ -199,7 +207,7 @@ In Figure \ref{fig:elbow4} we can see that four clusters have been suggested for
   \label{fig:elbow4}
 \end{figure}
 
-\newpage
+\vspace{15mm}
 
 In Figure \ref{fig:elbow5} we can see that four clusters have been suggested for \textit{Violent Crime Rates by US State}
 dataset.
@@ -211,7 +219,8 @@ dataset.
   \label{fig:elbow5}
 \end{figure}
 
-\vspace{15mm}
+\newpage
+
 
 In Figure \ref{fig:elbow6} we can see that three clusters have been suggested for \textit{Wine} dataset.
 
@@ -222,7 +231,7 @@ In Figure \ref{fig:elbow6} we can see that three clusters have been suggested fo
   \label{fig:elbow6}
 \end{figure}
 
-\newpage
+\vspace{15mm}
 
 In Figure \ref{fig:elbow7} we can see that three clusters have been suggested for \textit{Bivariate} dataset.
 
@@ -233,11 +242,44 @@ In Figure \ref{fig:elbow7} we can see that three clusters have been suggested fo
   \label{fig:elbow7}
 \end{figure}
 
-\item \textbf{Average Silhoutte Method} : Average silhouette method computes the average silhouette of observations
-for different values of $K$. The optimal number of clusters $K$ is the one that maximize the average silhouette over
-a range of possible values for $K$. For each $K$, we calculate the average silhouette of all observations (avg.sil)
-and the we plot the curve of $avg.sil$ according to the number of clusters $K$. Finally, the location of the maximum
-is considered as the appropriate number of clusters.
+\newpage
+
+In Figure \ref{fig:elbow8} we can see that two or three clusters have been suggested for \textit{Flower Characteristics} dataset.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=1.3]{figures/results/flower/elbow.png}
+  \caption{Elbow Method on Flower Characteristics Data Set}
+  \label{fig:elbow8}
+\end{figure}
+
+\vspace{15mm}
+
+In Figure \ref{fig:elbow9} we can see that four or five clusters have been suggested for \textit{Subset of C-horizon of Kola Data}.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=1.3]{figures/results/chorsub/elbow.png}
+  \caption{Elbow Method on Subset of C-horizon of Kola Data}
+  \label{fig:elbow9}
+\end{figure}
+
+\newpage
+
+In Figure \ref{fig:elbow10} we can see that two clusters have been suggested for \textit{Plant Species Traits Data}.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=1.3]{figures/results/plantTraits/elbow.png}
+  \caption{Plant Species Traits Data}
+  \label{fig:elbow10}
+\end{figure}
+
+Elbow Method is one kind of visualization method for selecting $K$. By observing the plot we can assume a value for optimal number of clusters $K$. But in all cases it is not possible to find the bend(knee) in the graph because of not being spherical and disjoint data clusters in the dataset. So, to confirm about the assumption taken from elbow method, we can apply average silhouette method or gap statistic method.
+
+\item \textbf{Average Silhoutte Method} : Average silhouette method computes the average silhouette of observations for different values of $K$. The optimal number of clusters $K$ is the one that maximize the average silhouette over a range of possible values for $K$. For each $K$, we calculate the average silhouette of all observations (avg.sil) and the we plot the curve of $avg.sil$ according to the number of clusters $K$. Finally, the location of the maximum is considered as the appropriate number of clusters. We have applied this algorithm on ten data sets and plot their results.
+
+\newpage
 
 In Figure \ref{fig:silhoutte1} we can see that two clusters have been suggested for \textit{Iris} Data Set.
 
@@ -248,6 +290,8 @@ In Figure \ref{fig:silhoutte1} we can see that two clusters have been suggested 
   \label{fig:silhoutte1}
 \end{figure}
 
+\vspace{15mm}
+
 In Figure \ref{fig:silhoutte2} we can see that three clusters have been suggested for \textit{Isotopic Composition Plutonium Batches} Data Set.
 
 \begin{figure}[h!]
@@ -257,7 +301,7 @@ In Figure \ref{fig:silhoutte2} we can see that three clusters have been suggeste
   \label{fig:silhoutte2}
 \end{figure}
 
-\vspace{15mm}
+\newpage
 
 In Figure \ref{fig:silhoutte3} we can see that four clusters have been suggested for \textit{Votes for Republican Candidate in Presidential Elections} Data Set.
 
@@ -268,7 +312,7 @@ In Figure \ref{fig:silhoutte3} we can see that four clusters have been suggested
   \label{fig:silhoutte3}
 \end{figure}
 
-\newpage
+\vspace{15mm}
 
 In Figure \ref{fig:silhoutte4} we can see that six clusters have been suggested for \textit{Ruspini} Data Set.
 
@@ -279,7 +323,7 @@ In Figure \ref{fig:silhoutte4} we can see that six clusters have been suggested 
   \label{fig:silhoutte4}
 \end{figure}
 
-\vspace{15mm}
+\newpage
 
 In Figure \ref{fig:silhoutte5} we can see that two clusters have been suggested for \textit{Violent Crime Rates by US State} Data Set.
 
@@ -290,7 +334,7 @@ In Figure \ref{fig:silhoutte5} we can see that two clusters have been suggested 
   \label{fig:silhoutte5}
 \end{figure}
 
-\newpage
+\vspace{15mm}
 
 In Figure \ref{fig:silhoutte6} we can see that three clusters have been suggested for \textit{Wine} Data Set.
 
@@ -301,7 +345,7 @@ In Figure \ref{fig:silhoutte6} we can see that three clusters have been suggeste
   \label{fig:silhoutte6}
 \end{figure}
 
-\vspace{15mm}
+\newpage
 
 In Figure \ref{fig:silhoutte7} we can see that three clusters have been suggested for \textit{Bivariate} Data Set.
 
@@ -310,6 +354,39 @@ In Figure \ref{fig:silhoutte7} we can see that three clusters have been suggeste
   \includegraphics[scale=1.3]{figures/results/xclara/silhouette.png}
   \caption{Average Silhouette Method on Bivariate Data Set}
   \label{fig:silhoutte7}
+\end{figure}
+
+\vspace{15mm}
+
+In Figure \ref{fig:silhoutte8} we can see that two clusters have been suggested for \textit{Flower Characteristics} Data Set.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=1.3]{figures/results/flower/silhouette.png}
+  \caption{Average Silhouette Method on Flower Characteristics Data Set}
+  \label{fig:silhoutte8}
+\end{figure}
+
+\newpage
+
+In Figure \ref{fig:silhoutte9} we can see that four clusters have been suggested for \textit{Subset of C-horizon of Kola Data}.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=1.3]{figures/results/chorsub/silhouette.png}
+  \caption{Average Silhouette Method on Subset of C-horizon of Kola Data}
+  \label{fig:silhoutte9}
+\end{figure}
+
+\vspace{15mm}
+
+In Figure \ref{fig:silhoutte10} we can see that two clusters have been suggested for \textit{Plant Species Traits Data}.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=1.3]{figures/results/plantTraits/silhouette.png}
+  \caption{Average Silhouette Method on Plant Species Traits Data}
+  \label{fig:silhoutte10}
 \end{figure}
 
 \newpage
@@ -321,9 +398,9 @@ That is, for each variable $(x_i)$ in the data set we compute its range $[min(x_
 for the $n$ points uniformly from the interval $min$ to $max$. For the observed data and the the reference data, the total
 intracluster variation is computed using different values of $k$. The gap statistic for a given $k$ is defined as follow:
 
-$Gap_n(k) = E_n^{*}\{\log W_k\} - \log W_k$
+$$Gap_n(k) = E_n^{*}\{\log W_k\} - \log W_k$$
 
-\vspace{15mm}
+\vspace{5mm}
 
 In Figure \ref{fig:gap1} we can see that three clusters have been suggested for \textit{Iris} Data Set.
 
@@ -400,12 +477,45 @@ In Figure \ref{fig:gap7} we can see that three clusters have been suggested for 
   \label{fig:gap7}
 \end{figure}
 
-\end{itemize}
+\newpage
+
+In Figure \ref{fig:gap8} we can see that two clusters have been suggested for \textit{Flower Characteristics} Data Set.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=1.3]{figures/results/flower/gap.png}
+  \caption{Gap Statistic Method on Flower Characteristics Data Set}
+  \label{fig:gap8}
+\end{figure}
+
+\vspace{15mm}
+
+In Figure \ref{fig:gap9} we can see that seven clusters have been suggested for \textit{Subset of C-horizon of Kola Data}.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=1.3]{figures/results/chorsub/gap.png}
+  \caption{Gap Statistic Method on Subset of C-horizon of Kola Data}
+  \label{fig:gap9}
+\end{figure}
 
 \newpage
 
-Now we can make a comparison table to see how different methods are working on different datasets. In Table~\ref{table:1}
-we can see original cluster number and output of three methods accordingly.
+In Figure \ref{fig:gap10} we can see that two clusters have been suggested for \textit{Plant Species Traits Data}.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=1.3]{figures/results/plantTraits/gap.png}
+  \caption{Gap Statistic Method on Plant Species Traits Data}
+  \label{fig:gap10}
+\end{figure}
+
+\vspace{10mm}
+
+The estimation of the optimal number of clusters within a set of data points is a very important problem, as most clustering algorithms need that parameter as input in order to group the data. Many methods have been proposed to find the proper $K$, among which the ``elbow" method offers a very clear and naive solution based on intra-cluster variance. The gap statistic, proposed by Tobshirani et al. formalizes this approach and offers an easy-to-implement algorithm that successfully finds the correct $K$ in the case of globular, Gaussian-distributed, mildly disjoint data distributions.
+
+\end{itemize}
+Now we can make a comparison table to see how different methods are working on different datasets. In Table~\ref{table:1} we can see original cluster number and output of three methods accordingly.
 
 \begin{table}[h]
  \caption{Table to compare outputs of different methods}
@@ -427,31 +537,22 @@ we can see original cluster number and output of three methods accordingly.
  \hline
  \textit{Wine Data Set} & 3 & 3 & 3 & 3 \\
  \hline
+ \textit{Flower Characteristics Data Set} & 2 & 2 & 2 & 2 \\
+ \hline
+ \textit{Plant Species Traits Data} & 2 & 2 & 2 & 2 \\
+ \hline
+ \textit{Subset of C-horizon of Kola Data} & 4 & 4 & 4 & 7 \\
+ \hline
 \end{tabular}
 \label{table:1}
 \end{table}
 
-
 \section{Discussion}
-The problem of estimating the number of clusters in a data set is difficult, underlined by the
-fact that there is no clear definition of a `cluster'. Hence, in data that are not clearly separated
-into groups, different people might have different opinions about the number of distinct
-clusters. In this paper, we have focused on well-separated clusters and have proposed the
-gap statistic for estimating the number of groups. When used with a uniform reference
-distribution in the principal component orientation, it outperforms other proposed methods
-from the literature in our simulations. The simpler uniform reference (over the range of the
-data) works well except when the data lie near a subspace.
+The problem of estimating the number of clusters in a data set is difficult, underlined by the fact that there is no clear definition of a `cluster'. Hence, in data that are not clearly separated into groups, different people might have different opinions about the number of distinct clusters. In this paper, we have focused on well-separated clusters and have proposed the gap statistic for estimating the number of groups. When used with a uniform reference distribution in the principal component orientation, it outperforms other proposed methods
+from the literature in our simulations. The simpler uniform reference (over the range of the data) works well except when the data lie near a subspace.
 
 In this chapter we have discussed about our different methods of determining the number of optimal clusters
-in a dataset. And we have compared the results of different methods with the original result. In \textbf{Elbow Method}
-the problem  is:  This  "elbow"  cannot always  be  unambiguously  identified.  Sometimes  there  is  no  elbow,  or
-several elbows can be detected. So, then we'll need to run \textbf{Average Silhouette Method}. The average $s(i)$ over all data
-of a cluster is a measure of how tightly grouped all the data in the cluster are. Thus the average $s(i)$ over all data
-of the entire dataset is a measure of how appropriately the data have been clustered. If there are too many or too few
-clusters, as may occur when a poor choice of $K$ is used in the clustering algorithm (e.g.: $K$-means), some of the
-clusters will typically display much narrower silhouettes than the rest. The simulation studies suggest that the gap
-estimate is good at identifying well-separated clusters. When data are not well separated, the notion of a cluster is
-not any more well defined in the literature.
+in a dataset. And we have compared the results of different methods with the original result. In \textbf{Elbow Method} the problem  is:  This  "elbow"  cannot always  be  unambiguously  identified.  Sometimes  there  is  no  elbow,  or several elbows can be detected. So, then we'll need to run \textbf{Average Silhouette Method}. The average $s(i)$ over all data of a cluster is a measure of how tightly grouped all the data in the cluster are. Thus the average $s(i)$ over all data of the entire dataset is a measure of how appropriately the data have been clustered. If there are too many or too few clusters, as may occur when a poor choice of $K$ is used in the clustering algorithm (e.g.: $K$-means), some of the clusters will typically display much narrower silhouettes than the rest. The simulation studies suggest that the gap estimate is good at identifying well-separated clusters. When data are not well separated, the notion of a cluster is not any more well defined in the literature.
 
 
 \endinput

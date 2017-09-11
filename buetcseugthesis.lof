@@ -2,28 +2,37 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Clustering Process\relax }}{1}{figure.caption.6}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Elbow Method Example\relax }}{19}{figure.caption.7}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Elbow Method Example\relax }}{17}{figure.caption.9}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Elbow Method on Iris Dataset\relax }}{27}{figure.caption.8}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Elbow Method on Isotopic Composition Plutonium Batches\relax }}{27}{figure.caption.9}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Elbow Method on Votes for Republican Candidate in Presidential Elections\relax }}{28}{figure.caption.10}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Elbow Method on Ruspini Dataset\relax }}{28}{figure.caption.11}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Elbow Method on Violent Crime Rates by US State\relax }}{29}{figure.caption.12}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Elbow Method on Wine Data Set\relax }}{29}{figure.caption.13}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Elbow Method on Bivariate Data Set\relax }}{30}{figure.caption.14}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Average Silhouette Method on Iris Dataset\relax }}{30}{figure.caption.15}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Average Silhouette Method on Isotopic Composition Plutonium Batches\relax }}{31}{figure.caption.16}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Average Silhouette Method on Votes for Republican Candidate in Presidential Elections\relax }}{31}{figure.caption.17}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Average Silhouette Method on Ruspini Data Set\relax }}{32}{figure.caption.18}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Average Silhouette Method on Violent Crime Rates by US State\relax }}{32}{figure.caption.19}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Average Silhouette Method on Wine Data Set\relax }}{33}{figure.caption.20}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Average Silhouette Method on Bivariate Data Set\relax }}{33}{figure.caption.21}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Gap Statistic Method on Iris Dataset\relax }}{34}{figure.caption.22}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Gap Statistic Method on Isotopic Composition Plutonium Batches\relax }}{35}{figure.caption.23}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Gap Statistic Method on Republican Candidate in Presidential Elections\relax }}{35}{figure.caption.24}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Gap Statistic Method on Ruspini\relax }}{36}{figure.caption.25}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Gap Statistic Method on Violent Crime Rates by US State\relax }}{36}{figure.caption.26}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Gap Statistic Method on Wine Data Set\relax }}{37}{figure.caption.27}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Gap Statistic Method on Bivariate Data Set\relax }}{37}{figure.caption.28}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Elbow Method on Iris Dataset\relax }}{25}{figure.caption.10}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Elbow Method on Isotopic Composition Plutonium Batches\relax }}{26}{figure.caption.11}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Elbow Method on Votes for Republican Candidate in Presidential Elections\relax }}{26}{figure.caption.12}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Elbow Method on Ruspini Dataset\relax }}{27}{figure.caption.13}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Elbow Method on Violent Crime Rates by US State\relax }}{27}{figure.caption.14}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Elbow Method on Wine Data Set\relax }}{28}{figure.caption.15}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Elbow Method on Bivariate Data Set\relax }}{28}{figure.caption.16}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Elbow Method on Flower Characteristics Data Set\relax }}{29}{figure.caption.17}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Elbow Method on Subset of C-horizon of Kola Data\relax }}{29}{figure.caption.18}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Plant Species Traits Data\relax }}{30}{figure.caption.19}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Average Silhouette Method on Iris Dataset\relax }}{31}{figure.caption.20}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Average Silhouette Method on Isotopic Composition Plutonium Batches\relax }}{31}{figure.caption.21}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Average Silhouette Method on Votes for Republican Candidate in Presidential Elections\relax }}{32}{figure.caption.22}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Average Silhouette Method on Ruspini Data Set\relax }}{32}{figure.caption.23}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Average Silhouette Method on Violent Crime Rates by US State\relax }}{33}{figure.caption.24}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Average Silhouette Method on Wine Data Set\relax }}{33}{figure.caption.25}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Average Silhouette Method on Bivariate Data Set\relax }}{34}{figure.caption.26}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Average Silhouette Method on Flower Characteristics Data Set\relax }}{34}{figure.caption.27}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Average Silhouette Method on Subset of C-horizon of Kola Data\relax }}{35}{figure.caption.28}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Average Silhouette Method on Plant Species Traits Data\relax }}{35}{figure.caption.29}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Gap Statistic Method on Iris Dataset\relax }}{36}{figure.caption.30}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Gap Statistic Method on Isotopic Composition Plutonium Batches\relax }}{37}{figure.caption.31}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Gap Statistic Method on Republican Candidate in Presidential Elections\relax }}{37}{figure.caption.32}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Gap Statistic Method on Ruspini\relax }}{38}{figure.caption.33}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Gap Statistic Method on Violent Crime Rates by US State\relax }}{38}{figure.caption.34}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Gap Statistic Method on Wine Data Set\relax }}{39}{figure.caption.35}
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Gap Statistic Method on Bivariate Data Set\relax }}{39}{figure.caption.36}
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Gap Statistic Method on Flower Characteristics Data Set\relax }}{40}{figure.caption.37}
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Gap Statistic Method on Subset of C-horizon of Kola Data\relax }}{40}{figure.caption.38}
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Gap Statistic Method on Plant Species Traits Data\relax }}{41}{figure.caption.39}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -86,30 +86,19 @@ Arithmetic Mean"\index{UPGMA}, also known as average linkage clustering)\index{A
 agglomerative (starting with single elements and aggregating them into clusters) or divisive
 (starting with the complete data set and dividing it into partitions).
 
-These methods will not produce a unique partitioning of the data set, but a hierarchy from which the user still
-needs to choose appropriate clusters. They are not very robust towards outliers, which will either show up as
-additional clusters or even cause other clusters to merge (known as ``chaining phenomenon", in particular with
-single-linkage clustering). In the general case, the complexity is $O(n^{3})$ for agglomerative clustering and
-$O(2^{n-1})$ for \textit{divisive clustering}\index{Divisive Clustering}, which makes them too slow for large data sets. For some special cases,
-optimal efficient methods (of complexity $O(n^{2})$ are known as single-linkage and complete-linkage clustering.
-In the \textit{data mining}\index{Data Mining} community these methods are recognized as a theoretical foundation of cluster analysis,
-but often considered obsolete. They did however provide inspiration for many later methods such as density based
-clustering.
-
-
 \item \textbf{Centroid-based Clustering} : In centroid-based clustering\index{Centroid Based Clustering}, clusters are represented by a central vector,
-which may not necessarily be a member of the data set. When the number of clusters is fixed to k, k-means clustering
-gives a formal definition as an optimization problem: find the k cluster centers and assign the objects to the nearest
+which may not necessarily be a member of the data set. When the number of clusters is fixed to $K$, $K$-means clustering
+gives a formal definition as an optimization problem: find the $K$ cluster centers and assign the objects to the nearest
 cluster center, such that the squared distances from the cluster are minimized.
 
 The optimization problem\index{Optimization Problem} itself is known to be NP-hard, and thus the common approach is to search only for approximate
 solutions. A particularly well known approximative method is Lloyd's algorithm, often actually referred to as
 ``$K$-means algorithm". It does however only find a local optimum, and is commonly run multiple times with different
 random initializations. Variations of $K$-means\index{K-means} often include such optimizations as choosing the best of multiple runs,
-but also restricting the centroids to members of the data set (k-medoids)\index{K-medoids}, choosing medians (k-medians clustering),
-choosing the initial centers less randomly (k-means++) or allowing a fuzzy cluster assignment (fuzzy c-means)\index{fuzzy C-means}.
+but also restricting the centroids to members of the data set ($K$-medoids)\index{K-medoids}, choosing medians ($K$-medians clustering),
+choosing the initial centers less randomly ($K$-means++) or allowing a fuzzy cluster assignment (fuzzy c-means)\index{fuzzy C-means}.
 
-Most k-means-type algorithms require the number of clusters - k to be specified in advance, which is considered
+Most $K$-means type algorithms require the number of clusters $K$ to be specified in advance, which is considered
 to be one of the biggest drawbacks of these algorithms. Furthermore, the algorithms prefer clusters of approximately
 similar size, as they will always assign an object to the nearest centroid. This often leads to incorrectly cut
 borders of clusters (which is not surprising since the algorithm optimizes cluster centers, not cluster borders).
@@ -129,11 +118,6 @@ initialized randomly and whose parameters are iteratively optimized to better fi
 to a local optimum, so multiple runs may produce different results. In order to obtain a hard clustering, objects
 are often then assigned to the Gaussian distribution they most likely belong to; for soft clusterings, this is not
 necessary.
-
-Distribution-based clustering produces complex models for clusters that can capture correlation and dependence
-between attributes. However, these algorithms put an extra burden on the user: for many real data sets, there may
-be no concisely defined mathematical model (e.g. assuming Gaussian distributions is a rather strong assumption
-on the data).
 
 \item \textbf{Density-based Clustering} : In density-based clustering\index{Density Based Clustering}, clusters are defined as areas of higher density
 than the remainder of the data set. Objects in these sparse areas that are required to separate clusters are usually
@@ -157,22 +141,14 @@ On data sets with, for example, overlapping Gaussian distributions a common use 
 cluster borders produced by these algorithms will often look arbitrary, because the cluster density decreases
 continuously. On a data set consisting of mixtures of Gaussians, these algorithms are nearly always outperformed
 by methods such as EM clustering that are able to precisely model this kind of data.
-
-Mean-shift is a clustering approach where each object is moved to the densest area in its vicinity, based on kernel
-density estimation. Eventually, objects converge to local maxima\index{Local Maxima} of density. Similar to k-means clustering, these
-``density attractors"\index{Density Attractors} can serve as representatives for the data set, but mean-shift can detect arbitrary-shaped
-clusters similar to DBSCAN. Due to the expensive iterative procedure and density estimation, mean-shift\index{Mean Shift} is usually
-slower than DBSCAN or k-Means. Besides that, the applicability of the mean-shift algorithm to multidimensional data
-is hindered by the unsmooth behaviour of the kernel density estimate, which results in over-fragmentation of cluster
-tails.
 \end{itemize}
 
 \section{Literature Survey}
 
-\subsection{Values of K specified within a range or set}
+\subsection{Values of $K$ specified within a range or set}
 The  performance  of  a  clustering  algorithm  may  be
-affected by the chosen value of K. Therefore, instead
-of using a single predefined K, a set of values might
+affected by the chosen value of $K$. Therefore, instead
+of using a single predefined $K$, a set of values might
 be   adopted.   It   is   important   for   the   number   of
 values  considered  to  be  reasonably  large,  to  reflect
 the  specific  characteristics  of  the  data  sets.  At  the
@@ -181,48 +157,47 @@ smaller  than  the  number  of  objects  in  the
 data sets, which is the main motivation for performing data clustering.
 
 Reported studies~\cite{han00, daoud95, daoud96, ranka98, bilmes97, bengio95}
-on K-means clustering and
+on $K$-means clustering and
 its  applications  usually  do  not  contain  any  explanation
-or  justification  for  selecting  particular  values for K.
-First,  a  number  of  researchers~\cite{bilmes97, bengio95} used  only  one  or  two  values  for K.
-Second, several  other  researchers~\cite{han00, daoud96} utilized relatively  large K
+or  justification  for  selecting  particular  values for $K$.
+First,  a  number  of  researchers~\cite{bilmes97, bengio95} used  only  one  or  two  values  for $K$.
+Second, several  other  researchers~\cite{han00, daoud96} utilized relatively  large $K$
 values  compared  with  the  number of  objects.  These  two  actions  contravene
-the  above mentioned  guidelines  for  selecting K. Therefore,the
+the  above mentioned  guidelines  for  selecting $K$. Therefore,the
 clustering  results  do  not  always  correctly  represent
 the performance of the tested algorithms.
 
 In  general,  the  performance  of  any  new  version
-of the K-means algorithm could be verified by com-
-paring  it  with  its  predecessors  on  the  same  criteria.
+of the $K$-means algorithm could be verified by comparing  it  with  its  predecessors  on  the  same  criteria.
 In   particular,   the   sum   of   cluster   distortions   is
 usually  employed  as  such  a  performance  indicator.~\cite{daoud96, bengio95}
 Thus, the comparison is considered fair  because  the  same  model and  criterion  are  used
 for the performance analysis.
 
-\subsection{Values of K specified by the user}
-The K-means  algorithm  implementation  in  many
+\subsection{Values of $K$ specified by the user}
+The $K$-means  algorithm  implementation  in  many
 data-mining   or   data   analysis   software   packages~\cite{hall02}
 requires the number of clusters to be specified
 by  the  user.  To  find  a  satisfactory  clustering
 result,  usually,  a  number  of  iterations  are  needed
 where the user executes the algorithm with different
-values  of K.  The  validity  of  the  clustering  result  is
+values  of $K$.  The  validity  of  the  clustering  result  is
 assessed  only  visually  without  applying  any  formal
 performance   measures.   With   this   approach,   it   is
 difficult  for  users  to  evaluate  the  clustering  result
 for multi-dimensional data sets.
 
-\subsection{Values of K determined in a later processing step}
-When K-means clustering is used as a pre-processing
+\subsection{Values of $K$ determined in a later processing step}
+When $K$-means clustering is used as a pre-processing
 tool,  the  number  of  clusters  is  determined  by  the
 specific requirements of the main processing algorithm.~\cite{hansen96}
 No  attention  is  paid  to  the  effect  of
 the  clustering  results  on  the  performance  of  this
-algorithm. In such applications, the K-means
-algorithm  is  employed  just  as  a  'black  box'  without
+algorithm. In such applications, the $K$-means
+algorithm  is  employed  just  as  a  `black  box'  without
 validation of the clustering result.
 
-\subsection{Values of K equated to the number of generators}
+\subsection{Values of $K$ equated to the number of generators}
 Synthetic   data   sets,   which   are   used   for   testing
 algorithms,  are  often  created  by  a  set  of  normal  or
 uniform   distribution   generators.   Then,   clustering
@@ -237,14 +212,14 @@ generator.  Such  a  difference  can  be  measured  by
 simply   counting   objects   or   calculating   the
 information gain.~\cite{bradly98}
 
-Unfortunately,  this  method  of  selecting K cannot
+Unfortunately,  this  method  of  selecting $K$ cannot
 be  applied  to  practical  problems.  The  data  distribution
 in  practical  problems  is  unknown  and  also
 the number of generators cannot be specified.
 
-\subsection{Values of K determined by statistical measures}
+\subsection{Values of $K$ determined by statistical measures}
 There  are  several  statistical  measures  available  for
-selecting K. These measures are often applied in combination
+selecting $K$. These measures are often applied in combination
 with   probabilistic   clustering   approaches.
 They are calculated with certain assumptions
 about  the  underlying  distribution  of  the  data.  The
@@ -258,7 +233,7 @@ which  are  associated  with  the null  hypothesis\index{Null Hypothesis},  are
 used for assessing the clustering results and also for
 determining the number of clusters.
 
-\subsection{Values of K determined through visualization}
+\subsection{Values of $K$ determined through visualization}
 Visual  verification  is  applied  widely  because  of  its
 simplicity and explanation possibilities. Visual
 examples  are  often  used  to  illustrate  the  drawbacks
@@ -271,14 +246,14 @@ implicit  nature.  The  clustering  models  utilized  by
 some  clustering  methods  may  not  be  appropriate
 for   particular   data   sets. The  application  of
 visualization  techniques  implies  a  data  distribution
-continuity  in  the  expected  clusters.  If  the K-means
+continuity  in  the  expected  clusters.  If  the $K$-means
 approach  is  applied  to  such  data  sets,  there  is  not
-any    cluster    that    satisfies   the K-means   clustering
+any    cluster    that    satisfies   the $K$-means   clustering
 model  and  at  the  same  time  corresponds  to  a
 particular   object   grouping   in   the   illustrated   data
-sets.  Therefore,  the K-means  algorithm  cannot  produce
+sets.  Therefore,  the $K$-means  algorithm  cannot  produce
 the  expected  clustering  results.  This  suggests
-that  the K-means  approach  is  unsuitable  for  such
+that  the $K$-means  approach  is  unsuitable  for  such
 data sets.
 
 \section{Objective}

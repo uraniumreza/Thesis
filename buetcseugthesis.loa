@@ -1,4 +1,4 @@
-\contentsline {algorithm}{\numberline {1}{\ignorespaces Basic K-means algorithm.\relax }}{13}{algorithm.1}
-\contentsline {algorithm}{\numberline {2}{\ignorespaces Elbow Method\relax }}{18}{algorithm.2}
-\contentsline {algorithm}{\numberline {3}{\ignorespaces Silhouette Method\relax }}{21}{algorithm.3}
-\contentsline {algorithm}{\numberline {4}{\ignorespaces Gap Statistic Method\relax }}{22}{algorithm.4}
+\contentsline {algorithm}{\numberline {1}{\ignorespaces Basic $K$-means algorithm.\relax }}{12}{algorithm.1}
+\contentsline {algorithm}{\numberline {2}{\ignorespaces Elbow Method\relax }}{16}{algorithm.2}
+\contentsline {algorithm}{\numberline {3}{\ignorespaces Silhouette Method\relax }}{19}{algorithm.3}
+\contentsline {algorithm}{\numberline {4}{\ignorespaces Gap Statistic Method\relax }}{20}{algorithm.4}

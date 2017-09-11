@@ -22,35 +22,33 @@
 \BOOKMARK [1][-]{section.1.4}{Thesis Organization}{chapter.1}% 22
 \BOOKMARK [0][-]{chapter.2}{Background}{}% 23
 \BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 24
-\BOOKMARK [2][-]{subsection.2.1.1}{Machine Learning}{section.2.1}% 25
-\BOOKMARK [1][-]{section.2.2}{A Deep Dive into Cluster Analysis}{chapter.2}% 26
-\BOOKMARK [2][-]{subsection.2.2.1}{Centroid Based Cluster}{section.2.2}% 27
-\BOOKMARK [2][-]{subsection.2.2.2}{K-means}{section.2.2}% 28
-\BOOKMARK [2][-]{subsection.2.2.3}{The Basic K-means Algorithm}{section.2.2}% 29
-\BOOKMARK [2][-]{subsection.2.2.4}{Assigning Points to the Closest Centroid}{section.2.2}% 30
-\BOOKMARK [2][-]{subsection.2.2.5}{Centroids and Objective Functions}{section.2.2}% 31
-\BOOKMARK [2][-]{subsection.2.2.6}{Data in Euclidean Space}{section.2.2}% 32
-\BOOKMARK [2][-]{subsection.2.2.7}{Choosing Initial Centroids}{section.2.2}% 33
-\BOOKMARK [2][-]{subsection.2.2.8}{Updating Centroids Incrementally}{section.2.2}% 34
-\BOOKMARK [0][-]{chapter.3}{Direct and Statistical Testing Methods for Selecting K}{}% 35
-\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 36
-\BOOKMARK [1][-]{section.3.2}{Elbow Method}{chapter.3}% 37
-\BOOKMARK [1][-]{section.3.3}{Average Silhouette Method}{chapter.3}% 38
-\BOOKMARK [1][-]{section.3.4}{Gap Statistic Method}{chapter.3}% 39
-\BOOKMARK [1][-]{section.3.5}{Comparison of Three Methods}{chapter.3}% 40
-\BOOKMARK [0][-]{chapter.4}{Experimental Study}{}% 41
-\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 42
-\BOOKMARK [1][-]{section.4.2}{Data Sets}{chapter.4}% 43
-\BOOKMARK [1][-]{section.4.3}{Performance Metric}{chapter.4}% 44
-\BOOKMARK [1][-]{section.4.4}{Results}{chapter.4}% 45
-\BOOKMARK [1][-]{section.4.5}{Discussion}{chapter.4}% 46
-\BOOKMARK [0][-]{chapter.5}{Conclusion and Future Work}{}% 47
-\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 48
-\BOOKMARK [1][-]{section.5.2}{Conclusion}{chapter.5}% 49
-\BOOKMARK [1][-]{section.5.3}{Future Work}{chapter.5}% 50
-\BOOKMARK [0][-]{section.5.3}{References}{}% 51
-\BOOKMARK [0][-]{section*.31}{Index}{}% 52
-\BOOKMARK [0][-]{appendix.A}{Codes}{}% 53
-\BOOKMARK [1][-]{section.A.1}{R-Code of Elbow Method for k-means clustering}{appendix.A}% 54
-\BOOKMARK [1][-]{section.A.2}{R-Code of Average Silhouette Method for k-means clustering}{appendix.A}% 55
-\BOOKMARK [1][-]{section.A.3}{R-Code of Gap Statistic Method for k-means clustering}{appendix.A}% 56
+\BOOKMARK [1][-]{section.2.2}{A Deep Dive into Cluster Analysis}{chapter.2}% 25
+\BOOKMARK [2][-]{subsection.2.2.1}{Centroid Based Cluster}{section.2.2}% 26
+\BOOKMARK [2][-]{subsection.2.2.2}{K-means}{section.2.2}% 27
+\BOOKMARK [2][-]{subsection.2.2.3}{The Basic K-means Algorithm}{section.2.2}% 28
+\BOOKMARK [2][-]{subsection.2.2.4}{Assigning Points to the Closest Centroid}{section.2.2}% 29
+\BOOKMARK [2][-]{subsection.2.2.5}{Centroids and Objective Functions}{section.2.2}% 30
+\BOOKMARK [2][-]{subsection.2.2.6}{Data in Euclidean Space}{section.2.2}% 31
+\BOOKMARK [2][-]{subsection.2.2.7}{Choosing Initial Centroids}{section.2.2}% 32
+\BOOKMARK [2][-]{subsection.2.2.8}{Updating Centroids Incrementally}{section.2.2}% 33
+\BOOKMARK [0][-]{chapter.3}{Direct and Statistical Testing Methods for Selecting K}{}% 34
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 35
+\BOOKMARK [1][-]{section.3.2}{Elbow Method}{chapter.3}% 36
+\BOOKMARK [1][-]{section.3.3}{Average Silhouette Method}{chapter.3}% 37
+\BOOKMARK [1][-]{section.3.4}{Gap Statistic Method}{chapter.3}% 38
+\BOOKMARK [1][-]{section.3.5}{Comparison of Three Methods}{chapter.3}% 39
+\BOOKMARK [0][-]{chapter.4}{Experimental Study}{}% 40
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 41
+\BOOKMARK [1][-]{section.4.2}{Data Sets}{chapter.4}% 42
+\BOOKMARK [1][-]{section.4.3}{Performance Metric}{chapter.4}% 43
+\BOOKMARK [1][-]{section.4.4}{Results}{chapter.4}% 44
+\BOOKMARK [1][-]{section.4.5}{Discussion}{chapter.4}% 45
+\BOOKMARK [0][-]{chapter.5}{Conclusion and Future Work}{}% 46
+\BOOKMARK [1][-]{section.5.1}{Conclusion}{chapter.5}% 47
+\BOOKMARK [1][-]{section.5.2}{Future Work}{chapter.5}% 48
+\BOOKMARK [0][-]{section.5.2}{References}{}% 49
+\BOOKMARK [0][-]{section*.42}{Index}{}% 50
+\BOOKMARK [0][-]{appendix.A}{Codes}{}% 51
+\BOOKMARK [1][-]{section.A.1}{R-Code of Elbow Method for k-means clustering}{appendix.A}% 52
+\BOOKMARK [1][-]{section.A.2}{R-Code of Average Silhouette Method for k-means clustering}{appendix.A}% 53
+\BOOKMARK [1][-]{section.A.3}{R-Code of Gap Statistic Method for k-means clustering}{appendix.A}% 54

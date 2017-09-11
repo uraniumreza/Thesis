@@ -1,37 +1,17 @@
 \chapter{Conclusion and Future Work}\label{ch:conclusion}
 
-\section{Introduction}
-In this beautiful and mysterious world there is nothing as to be final and accurate or flawless.
-There must be some pitfalls or crevices to everything. This is the ultimate rule and this is
-the inherent daintiness. There was a time when everyone believes that mass and time are real
-constant and cannot have different value at different circumstances in the era of Newton. Then
-there comes Einstein with his great mind and changed the way of thinking of whole world. He
-had shown how these very obvious things can be realative in different context of speed. Once
-upon a time the shape of the mother earth is considered as a flat land and center of our solar
-system. But now what we have learnt by the great minds of our history is the rounding shape of
-the mother earth and nothing but a tiny planet of the galaxy. We believe all these things without
-seeing the fact with our own eyes because of mathmetical proof. Once Albert Einstein said that
-“Pure mathematics is, in its way, the poetry of logical ideas”.
-
-It is also true about our improvement of the determining the number of clusters. There have so
-many different methods exist. Different minds have different directions of view. We have
-tried to highlight the three major methods of finding $K$ for $K$-means algorithm.
-
 \section{Conclusion}
-Existing methods of selecting the number of clusters for
-$K$-means clustering have a number of drawbacks.
-Also,  current  methods  for  assessing  the  clustering
-results  do  not  provide   much  information   on  the
-performance of the clustering algorithm.
-Three  methods  to  select  the  number  of  clusters
-for  the $K$-means  algorithm  have  been  reviewed  in
-this work. But we did not propose any new method or improvement
-of existing methods.
+Existing methods of selecting the number of clusters for $K$-means clustering have a number of drawbacks. Also,  current  methods  for  assessing  the  clustering results  do  not  provide   much  information   on  the
+performance of the clustering algorithm. Three  methods  to  select  the  number  of  clusters for  the $K$-means  algorithm  have  been  reviewed  in this work. But we did not propose any new method or improvement of existing methods.
+
+The problem of estimating the number of clusters in a data set is difficult, underlined by the fact that there is no clear definition of a `cluster'. Hence, in data that are not clearly separated into groups, different people might have different opinions about the number of distinct clusters. In this paper, we have focused on well-separated clusters and have proposed the gap statistic for estimating the number of groups. When used with a uniform reference distribution in the principal component orientation, it outperforms other proposed methods
+from the literature in our simulations. The simpler uniform reference (over the range of the data) works well except when the data lie near a subspace.
+
+In this chapter we have discussed about our different methods of determining the number of optimal clusters
+in a dataset. And we have compared the results of different methods with the original result. In \textbf{Elbow Method} the problem  is:  This  "elbow"  cannot always  be  unambiguously  identified.  Sometimes  there  is  no  elbow,  or several elbows can be detected. So, then we'll need to run \textbf{Average Silhouette Method}. The average silhouette over all data of a cluster is a measure of how tightly grouped all the data in the cluster are. Thus the average silhouette over all data of the entire dataset is a measure of how appropriately the data have been clustered. If there are too many or too few clusters, as may occur when a poor choice of $K$ is used in the clustering algorithm (e.g.: $K$-means), some of the clusters will typically display much narrower silhouettes than the rest. The simulation studies suggest that the gap estimate is good at identifying well-separated clusters. When data are not well separated, the notion of a cluster is not any more well defined in the literature.
 
 \section{Future Work}
-In future we like to add some more datasets in our simulation process
-and compare them with more different methods of selecting number of
-clusters for $K$-means algorithm. And thus we hope that we can propose a new way of finding
-number of clusters efficiently and optimally for any given dataset.
+In future we like to add some more datasets in our simulation process and compare them with more different methods of selecting number of clusters for $K$-means algorithm. And thus we hope that we can propose a new way of finding
+optimal number of clusters efficiently and optimally for any given dataset.
 
 \endinput

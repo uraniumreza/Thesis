@@ -1,0 +1,61 @@
+Hello sir, I am Nayeem Reza.
+Thank you for being here for my thesis presentation.
+My thesis topic is "Selection of K in K-means Clustering"
+And I was supervised by Prof. Dr. Md. Monirul Islam.
+
+Let me first go through the background and introduce different tools and techniques I have used in my work.
+
+Clustering: It is one of the most important unsupervised learning problem. It basically deals with finding a structure in a collection of given unlabeled dataset. So, a cluster is therefore a collection of objects which are “similar” between them and are “dissimilar” to the objects belonging to other clusters.
+
+In this figure there is a scattered document and after clustering we can see there exists four different clusters.
+
+Clustering algorithms are four of a kind; they are: Hierarchical Clustering, Centroid-based Clustering, Distribution-based clustering and Density-based Clustering.
+
+In our work we have dealt with centroid-based clustering. So lets have a deep dive into centroid based clustering.
+
+Centroid Based Clustering:
+In Centroid-based clustering, clusters are represented by a central vector and which is not necessarily be a member of the data set. For data with continuous attributes, this central vector is named centroid which is basically the average (mean) of all the points in the cluster. And when the data has categorical attributes, the central vector is a medoid, that means the most representative point of a cluster.
+
+Suppose we have a object and we want to know which cluster it belongs according to centroid-based clustering. Then the central vector will answer our question. The nearest centroid will be the objects cluster.
+
+Some famous centroid based algorithms are K-means, K-medoid, K-medians, K-means++, fuzzy c-means etc.
+
+As our thesis work is on K-means clustering, lets have a look on K-means clustering.
+
+The K-means clustering technique is simple.
+
+First, we choose K initial centroids, where K is a user-specified parameter, which is the number of clusters desired. Each point is then assigned to the closest centroid, and each collection of points assigned to a centroid is a cluster. The centroid of each cluster is then updated based on the points assigned to the cluster. We repeat the process of assignment and update until no point changes the centroids.
+
+So, as we said earlier the number of clusters K should be specified by the user before applying the algorithm. Now we'll see some related works on determining optimal number of clusters of a given dataset.
+
+Values of K specified within a range or set: Researchers suggest to use a range for K and apply K-means algorithm then finally the sum of cluster distortions is usually employed as a performance indicator of different results.
+
+Values of K specified by the user: In many data mining and data analysis software packages user needs to specify number of clusters and here the validity of the clustering result is assessed only visually without applying any formal performance measures. With this approach, it is difficult for users to evaluate the clustering result for multi-dimensional data sets.
+
+Values of K determined in a later processing step: When K-means clustering is used as a pre-processing tool, the number of clusters is determined by the main processing algorithm. In such applications, the K-means algorithm is employed as a 'black-box' without any validation of the clustering result.
+
+Values of K equated to the number of generators: Synthetic data sets are often created by a set of normal or uniform distribution generators. Then, clustering algorithms are applied to those data sets with the number of clusters equated to the number of generators. But, this method of selecting K cannot be applied to practical problems as the data distribution in practical problems are unknown.
+
+Values of K determined by statistical measures: Data sets which are constructed by a set of Gaussian distributions. the Bayesian information criterion or Akeikes information criterion is calculated. And Finally, Monte Carlo techniques, which are associated with the null hypothesis, are used for assessing the clustering results.
+
+Values of K determined through visualization: Visual verification is applied widely because of its simplicity. The assessment of a clustering result using visualization techniques depends heavily on their implicit nature and this may not be appropriate for particular data sets.
+
+Objective:
+Our objective is to describe direct and statistical methods for determining number of clusters which includes elbow, average silhouette and gap static methods. And finally applying this methods on different datasets for finding optimal number of clusters.
+
+Elbow Method:
+In this method it computes K-means clustering for different values of K, say 1-10. and for each k, finds the within-cluster sum of squares. Then plot the wss according to the number of clusters. The location of the bend in the plot is considered as the number of clusters.
+
+The basic idea behind partitioning is to minimize the total intra-cluster variation.
+
+Average Silhouette Method:
+It is a method to interpret the consistency within clusters of data.
+The silhouette value is a measure of how similar an object is to its own cluster compared to other clusters.
+The silhouette ranges from -1 to 1, where a high value indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters.
+Silhouette can be calculated with any distance metric, such as the Euclidean distance or the Manhattan distance.
+
+And average silhouette is calculated by this equation. Sum of silhouette divided by total number of points.
+
+Gap Statistic Method:
+The gap statistic compares the total within intra-cluster variation for different values of K with their expected values under null reference distribution of the data, i.e. a distribution with no obvious clustering. That estimate for the optimal number of clusters K is the value for which log(W_k) falls the farthest below the reference curve.
+This is the equation for calculating gap where B is the number of reference data sets and W_qb is the within-dispersion matrix.
